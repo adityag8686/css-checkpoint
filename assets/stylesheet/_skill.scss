@@ -1,0 +1,37 @@
+
+
+.skills{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 4rem;
+        padding: 3rem;
+
+        .box{
+            padding: 3rem;
+            text-align: center;
+            box-shadow: $box-shadow;
+            border-radius: .5rem;
+            background: $white;
+
+            &:hover{
+                background: $crimson;
+
+                h3{
+                    color: $black;
+                }
+            }
+
+            i{
+                font-size: 5rem;
+            }
+
+            h3{
+                color: $white;
+                font-size: 1.7rem;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

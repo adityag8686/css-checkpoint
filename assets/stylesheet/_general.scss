@@ -1,0 +1,108 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 72.5%;
+}
+
+body{
+    background-image: url(../media/technology-7086598_1920.jpg);
+    height: 70vh;
+    background-size: cover;
+    padding-bottom: 6.5rem;
+}
+
+section{
+    padding: 7rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 6vw;
+    color: $white;
+    margin-bottom: 3rem; 
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    span{
+        text-transform: uppercase;
+        color: $crimson;
+    }
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: $crimson;
+    padding: .7rem;
+    font-size: 1.7rem;
+    color: $white;
+    padding-left: 2rem;
+
+    i{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 1.7rem;
+        text-align: center;
+        background: $white;
+        color: $crimson;
+        border-radius: 50%;
+        margin-left: 1rem;
+    } 
+    &:hover i{
+        margin-left: 2rem;
+    }
+}
+
+
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+    .heading{
+        font-size: 12vw;
+    }
+    
+    .navbar{
+
+        a{
+            i{
+                padding: 0;
+            }
+
+            span{
+                display: none;
+            }
+
+            &:hover{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    .home{
+        text-align: center;
+        gap: 2rem;
+
+        .image img{
+            height: 30rem;
+            width: 30rem;
+        }
+    }
+}

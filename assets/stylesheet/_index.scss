@@ -1,0 +1,73 @@
+.navbar{
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    a{
+        padding: 2rem;
+        font-size: 2rem;
+        background: $light-bg;
+        flex: 1;
+        color: $white;
+        text-align: center;
+        transition: .2s linear;
+
+        i{
+            color: $crimson;
+            padding-right: .5rem;
+        }
+    
+        &:hover{
+            background: $crimson;
+    
+        i{
+            color: $white;
+        }
+    }
+    }   
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+
+    .image{
+        flex: 1 1 42rem;
+        text-align: center;
+        padding-top: 6rem;
+
+        img{
+            
+            height: 45rem;
+            width: 45rem;
+            border-radius: 35%;
+        }
+    }
+
+    .content{
+        flex: 1 1 42rem;
+    }
+
+    h3{
+        color: $white;
+        font-size: 4rem;
+        padding-bottom: .5rem;
+    }
+
+    span{
+        font-size: 3rem;
+        color: $crimson;
+        padding: .5rem 0;
+        display: block;
+    }
+
+    p{
+        font-size: 1.7rem;
+        color: $light-color;
+        padding: 1rem 0;
+        line-height: 2;
+    }
+}
